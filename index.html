@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="js/jquery.js"></script>
 </head>
 <body>
 <p>Hello</p>
 <p>Hello</p>
+<script>
+    $.ajax({
+        url: 'http://10.25.216.94:8083?sdcApplicationId=1',
+        success: function(data) {
+            console.log(data);
+        }
+    });
+
+</script>
 </body>
 </html>
